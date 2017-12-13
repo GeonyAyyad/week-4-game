@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Crystal Game</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	</head>
+	<style type="text/css">
+		
+		body {
+				width: 100%;
+				margin: auto;
+				background-color: #DFDBE5;
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='12' viewBox='0 0 20 12'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='charlie-brown' fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M9.8 12L0 2.2V.8l10 10 10-10v1.4L10.2 12h-.4zm-4 0L0 6.2V4.8L7.2 12H5.8zm8.4 0L20 6.2V4.8L12.8 12h1.4zM9.8 0l.2.2.2-.2h-.4zm-4 0L10 4.2 14.2 0h-1.4L10 2.8 7.2 0H5.8z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+			}
+	.background-image{
+	background-image: url("https://goop.com/wp-content/uploads/2016/11/Stocksy_txp05b96a53aaF100_Medium_1035744.jpg"), opacity: 0.3;
+	
+	}
+	.jumbotron {
+	height: auto;
+	}
+
+	.box2{
+		background-color: purple;
+		height: 100px;
+	}
+
+	.box3{
+		background-color: white;
+		height: 100px;
+	}
+
+	.box4{
+		background-color: white;
+		margin-left: auto;
+	}
+
+	.box5{
+		background-color: white;
+		height: 140px;
+		margin-top: 10px;
+	}
+
+	.itemcenter{
+margin-right: auto;
+margin-left: auto;
+
+align-content: center;
+	}
+
+	.whitenumber {
+	color: white;
+	font-size: 60px;
+	margin-left: 65px;
+	margin-top: 15px;
+	}
+		
+	</style>
+	<body>
+		<div class="container">
+			<div class="jumbotron background-image">
+				<div class="container">
+					
+					<h1>Crystal Collectors!</h1>
+					<p class="fontDecrease">You will be given a random number at the start of the game.</p>
+					<p>There are 4 crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
+					<p>You win the game by matching the total score to the number given. If you exceed that number, you will lose the game.</p>
+					<p>The value of each crystal is hidden until you click on it. Each time the game starts, the value of each crystal will change.</p>
+					<h3>Good Luck!</h3>
+				</div>
+			</div>
+			<div class="row itemcenter">
+					<div class="col-sm-4 box2">
+						<h1 class="whitenumber"><span id="targetNumber"></span></h1>
+					</div>
+					<div class="col-sm-2 box3">
+						<p>Wins: <span id="wins"></span></p>
+						<p>Losses: <span id=""></span></p>
+					</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="col-sm-2">
+					<img src="http://clipart-library.com/img/1292965.png" width="90" height="90" id="one" />			
+				</div>
+				<div class="col-sm-2">
+					<img src="http://clipart-library.com/image_gallery/359673.png" width="90" height="90" id="two"/>			
+				</div>
+				<div class="col-sm-2">
+					<img src="http://clipart-library.com/images/BcgER7LLi.png" width="90" height="90" id="three"/>		
+				</div>
+				<div class="col-sm-2">
+					<img src="http://clipart-library.com/image_gallery2/Amethyst-Stone-PNG-Picture.png" width="90" height="90" id="four"/>			
+				</div>
+			</div>
+
+			<br>
+
+			<div class="row">
+				<div class="col-sm-4 box4">
+					<p> Your total score is:</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4 box5">
+					<h2> number </h2>
+				</div>
+			</div>
+		</div>
+
+</body>
+
+<script type="text/javascript">
+
+
+var targetNumber = Math.floor(Math.random() * 40) + 20;
+console.log(targetNumber)  
+
+var random
+
+var num1 = Math.floor(Math.random()*11+1)
+var num2 = Math.floor(Math.random()*11+1)
+var num3 = Math.floor(Math.random()*11+1)
+var num4 = Math.floor(Math.random()*11+1)
+
+
+var wins = 0;
+var losses = 0;
+// var computerScore = ;
+
+
+
+
+
+
+
+// if (counter === targetNumber) {
+//       wins ++;
+//     }
+
+//  else if (counter >= targetNumber) {
+//       losses ++;
+//     }
+
+
+
+
+// document.getElementById("wins").textContent = wins;
+// document.getElementById("losses").textContent = losses;
+// document.getElementById("remainingGuesses").textContent = remainingGuesses;
+// document.getElementById("wordPlaceholder").textContent = wordPlaceholder;
+
+// document.getElementById("targetNumber").textContent = targetNumber;
+
+
+
+
+
+
+</script>
+	
+</html>
